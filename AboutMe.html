@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+        }
+        header {
+            background-color: #4CAF50; /* Green header */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 24px;
+        }
+        marquee {
+            font-size: 24px;
+            color: white;
+        }
+        section {
+            background: #ffffff; /* White background for content section */
+            color: #000000; /* Black text */
+            padding: 20px;
+            width: 90%; /* Adjusted width */
+            margin: 20px auto; /* Center the section */
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        section ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        section ul li b {
+            color: #EE4B2B;
+        }
+        .image-container {
+            width: 100%; /* Full width of the container */
+            max-width: 400px; /* Fixed max width for image */
+            height: 200px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #fdfefe;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Adding bouncing effect to the moving name */
+        @keyframes bounce {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(10px); }
+            50% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        marquee {
+            animation: bounce 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><marquee direction="right" behavior="alternate">Krizzia Mae M. Moreno</marquee></h1>
+    </header>
+    
+    <section>
+        <p><b>About Me</b></p>
+        <ul>
+            <li><b style="color:#EE4B2B">Name: </b> Krizzia Mae M. Moreno</li>
+            <li><b style="color:#EE4B2B">Course: </b> Bachelor of Science in Information Technology</li>
+            <li><b style="color:#EE4B2B">Hobbies: </b> Reading, Writing, Watching, Cooking, and Playing Video Games</li>
+        </ul>
+        <div class="image-container">
+            <!-- Updated with your direct image link -->
+            <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-fresh-girl-cute-%E8%85%AE-avatar-material-png-image_4028266.jpg" alt="Krizzia Mae M. Moreno Avatar">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&#169; 2024 ACLC College of Marbel</p>
+    </footer>
+</body>
+</html>
